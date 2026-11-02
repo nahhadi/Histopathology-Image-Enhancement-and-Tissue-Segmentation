@@ -9,6 +9,18 @@ description = "Streamlit app for classical histopathology image processing and s
 requires-python = ">=3.10"
 readme = "README.md"
 license = {file = "LICENSE"}
+dependencies = [
+    "streamlit>=1.51,<2.0",
+    "numpy>=1.26,<3.0",
+    "Pillow>=10.0,<13.0",
+    "opencv-python-headless>=4.9,<5.0",
+    "scipy>=1.11,<2.0",
+    "scikit-image>=0.23,<1.0",
+    "pandas>=2.1,<3.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9.0"]
 
 [tool.setuptools.packages.find]
 include = ["histopathology*"]
